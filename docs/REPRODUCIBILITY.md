@@ -50,6 +50,15 @@ python benchmark_release/validate_synlv_release.py --help
 python benchmark_release/summarize_synlv_release.py --help
 ```
 
+## Reproducing paper tables and figures
+
+The paper-results reproduction CLI lists analysis-derived table and figure targets and runs a small deterministic self-test of the aggregation logic. The full runbook is `docs/REPRODUCE_PAPER_RESULTS.md`.
+
+```bash
+python benchmark_analysis/reproduce_paper_results.py --list-targets
+python benchmark_analysis/reproduce_paper_results.py --self-test
+```
+
 ## Croissant metadata
 
 The public Croissant metadata file is:

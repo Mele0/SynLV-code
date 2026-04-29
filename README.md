@@ -1,4 +1,4 @@
-# SynLV-code (Public Benchmark Code Artifact)
+# SynLV (Public Benchmark Code Artifact)
 
 SynLV is a synthetic benchmark for decision-time incompleteness in longitudinal survival prediction. This repository is the public code companion to the hosted synthetic benchmark dataset.
 
@@ -49,6 +49,7 @@ The canonical scenario registry is `benchmark_analysis/synlv_release_config.py`;
 - `docs/GENERATOR_SPECIFICATION.md`: compact code-faithful generator notes
 - `docs/BENCHMARK_CARD.md`: benchmark scope, task framing, and limitations
 - `docs/REPRODUCIBILITY.md`: validation and reproducibility commands
+- `docs/REPRODUCE_PAPER_RESULTS.md`: paper table/figure reproduction targets and commands
 - `docs/MIMIC_GROUNDING.md`: MIMIC/eICU access and redistribution boundary
 - `docs/THIRD_PARTY_NOTICES.md`: third-party code lineage and notices
 
@@ -66,11 +67,22 @@ python benchmark_release/validate_synlv_release.py --strict 1
 
 The strict validation command checks the scenario registry and Croissant inventory. Full local split/schema validation requires local dataset files and `--dataset-root`.
 
+## Reproducing Paper Tables and Figures
+
+The paper-results reproduction CLI maps analysis-derived paper outputs to executable targets. It does not reproduce descriptive scenario/protocol tables, and real-data targets require local credentialed summaries.
+
+```bash
+python benchmark_analysis/reproduce_paper_results.py --list-targets
+python benchmark_analysis/reproduce_paper_results.py --self-test
+```
+
+See `docs/REPRODUCE_PAPER_RESULTS.md` for the full target map and runbook.
+
 ## Quick Validation
 
 ```bash
-git clone --branch synlv-neurips2026 https://github.com/Mele0/SynLV-code.git
-cd SynLV-code
+git clone --branch synlv-neurips2026 --depth 1 https://github.com/Mele0/SynLV.git
+cd SynLV
 python benchmark_generation/final_generation.py --list-scenarios
 python benchmark_release/validate_synlv_release.py --strict 1
 ```
