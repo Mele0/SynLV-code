@@ -1,0 +1,15 @@
+# Editor and OS noise
+.DS_Store
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Generated documentation outputs
+docs/scenario_registry.json
+docs/audit/

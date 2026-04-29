@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "SynLV-code"
+message: "If you use this code artifact, please cite the SynLV paper and dataset release."
+type: software
+authors:
+  - family-names: "Mele"
+    given-names: "Amr"
+repository-code: "https://github.com/Mele0/SynLV-code"
+license: MIT
+keywords:
+  - synthetic benchmark
+  - survival analysis
+  - robustness
+  - longitudinal time series
