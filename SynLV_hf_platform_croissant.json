@@ -43,23 +43,23 @@
     "separator": "cr:separator",
     "source": "cr:source",
     "subField": "cr:subField",
-    "transform": "cr:transform"
+    "transform": "cr:transform",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dataLimitations": "rai:dataLimitations",
+    "dataUseCases": "rai:dataUseCases",
+    "dataSocialImpact": "rai:dataSocialImpact",
+    "hasSyntheticData": "rai:hasSyntheticData",
+    "wasDerivedFrom": "prov:wasDerivedFrom",
+    "wasGeneratedBy": "prov:wasGeneratedBy",
+    "dataReleaseMaintenance": "rai:dataReleaseMaintenance",
+    "dataAnnotationProtocol": "rai:dataAnnotationProtocol"
   },
   "@type": "sc:Dataset",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "name": "SynLV",
-  "description": "Submission-specific Croissant metadata for the hosted SynLV synthetic benchmark dataset. This artifact covers all 9 primary scenarios and all train/validation/test parquet files. MIMIC is grounding-only and is not redistributed as dataset rows. Hugging Face subsets: reference, missing_not_at_random_mild, missing_not_at_random_strong, missing_not_at_random_corr, missing_at_random, visitshift, visitshift_transfer, mismatch, mismatch_transfer.",
-  "alternateName": [
-    "reference",
-    "missing_not_at_random_mild",
-    "missing_not_at_random_strong",
-    "missing_not_at_random_corr",
-    "missing_at_random",
-    "visitshift",
-    "visitshift_transfer",
-    "mismatch",
-    "mismatch_transfer"
-  ],
+  "description": "Submission-specific Croissant metadata for the hosted SynLV synthetic benchmark dataset. This artifact covers all 9 primary scenarios and all train/validation/test parquet files. MIMIC is grounding-only and is not redistributed as dataset rows.",
+  "alternateName": "SynLV",
   "url": "https://huggingface.co/datasets/Mele0/SynLV",
   "license": "https://spdx.org/licenses/CC-BY-4.0",
   "version": "1.0.0",
@@ -69,20 +69,11 @@
     "survival-analysis",
     "robustness",
     "time-series",
-    "healthcare",
-    "reference",
-    "missing_not_at_random_mild",
-    "missing_not_at_random_strong",
-    "missing_not_at_random_corr",
-    "missing_at_random",
-    "visitshift",
-    "visitshift_transfer",
-    "mismatch",
-    "mismatch_transfer"
+    "healthcare"
   ],
   "distribution": [
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs000_train",
       "name": "fo_scenario_A_cs000_train",
       "description": "scenario_A cohortseed_000 train parquet",
@@ -91,7 +82,7 @@
       "sha256": "5ddd4924dffc3ce8c9487cb1d1f8ac3db89a6a968165b878c4b1eaf214d78550"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs000_val",
       "name": "fo_scenario_A_cs000_val",
       "description": "scenario_A cohortseed_000 val parquet",
@@ -100,7 +91,7 @@
       "sha256": "708146bcafb44e7d38096beebcc5b9dff4ae8c3caec3b72f47c475525d0c3ae0"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs000_test",
       "name": "fo_scenario_A_cs000_test",
       "description": "scenario_A cohortseed_000 test parquet",
@@ -109,7 +100,7 @@
       "sha256": "f58894af3fd746104223daf4d8e6773ec7cd6dd7140b8e3e886c94e7186613e6"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs001_train",
       "name": "fo_scenario_A_cs001_train",
       "description": "scenario_A cohortseed_001 train parquet",
@@ -118,7 +109,7 @@
       "sha256": "55ccc8c8a8f94fdb6764b457062f18fce11f2a431ca40654a3c86374a74e1b75"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs001_val",
       "name": "fo_scenario_A_cs001_val",
       "description": "scenario_A cohortseed_001 val parquet",
@@ -127,7 +118,7 @@
       "sha256": "aa7e0976d77d1b40541b7a18679b02e61dd718c63e6e1a95725ae7f7b8a380a5"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs001_test",
       "name": "fo_scenario_A_cs001_test",
       "description": "scenario_A cohortseed_001 test parquet",
@@ -136,7 +127,7 @@
       "sha256": "19b534da871659e79b63704cee699456d4ef332f6d57005ec132f2c51a770a0f"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs002_train",
       "name": "fo_scenario_A_cs002_train",
       "description": "scenario_A cohortseed_002 train parquet",
@@ -145,7 +136,7 @@
       "sha256": "5aaf992c873d4290f4d621810ba6d22a95790121df695a70cc9ea8d244b6d4ca"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs002_val",
       "name": "fo_scenario_A_cs002_val",
       "description": "scenario_A cohortseed_002 val parquet",
@@ -154,7 +145,7 @@
       "sha256": "832e1039ada1af5918705ed647c1b4d69b64c4b16f0afe04e4da244dac75c978"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs002_test",
       "name": "fo_scenario_A_cs002_test",
       "description": "scenario_A cohortseed_002 test parquet",
@@ -163,7 +154,7 @@
       "sha256": "d3ae2d71d85179894ad5491da1d3086cc290cc9f3b083b6d3ccd14feaa53c5b6"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs003_train",
       "name": "fo_scenario_A_cs003_train",
       "description": "scenario_A cohortseed_003 train parquet",
@@ -172,7 +163,7 @@
       "sha256": "6b31b765e3d7e7d15f88c5abcd8b6ec6c27449cc924f886d3adbe3183047d9fc"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs003_val",
       "name": "fo_scenario_A_cs003_val",
       "description": "scenario_A cohortseed_003 val parquet",
@@ -181,7 +172,7 @@
       "sha256": "ad3a4413bd4d2a9dfdb696c04912ce64b0d2541831adeb2fc33eb9908c51fd99"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs003_test",
       "name": "fo_scenario_A_cs003_test",
       "description": "scenario_A cohortseed_003 test parquet",
@@ -190,7 +181,7 @@
       "sha256": "d9567e7ae7e89092f7e5da944a1a31c066b4ee25c3854cd198d680f7ff859a50"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs004_train",
       "name": "fo_scenario_A_cs004_train",
       "description": "scenario_A cohortseed_004 train parquet",
@@ -199,7 +190,7 @@
       "sha256": "c99caf271f04040e2cda2eaec504a82076bfb70aac94af7149968cee6d987438"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs004_val",
       "name": "fo_scenario_A_cs004_val",
       "description": "scenario_A cohortseed_004 val parquet",
@@ -208,7 +199,7 @@
       "sha256": "ee53c99f949bdfef62a29d4c019167d88a8fb6ab7527b612c89e7603d57b5e15"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_A_cs004_test",
       "name": "fo_scenario_A_cs004_test",
       "description": "scenario_A cohortseed_004 test parquet",
@@ -217,7 +208,7 @@
       "sha256": "826b8db80d15a058c82df6b1552b6d327452c6095c8977a01ee2f24838f46e37"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs000_train",
       "name": "fo_scenario_B_cs000_train",
       "description": "scenario_B cohortseed_000 train parquet",
@@ -226,7 +217,7 @@
       "sha256": "758ed72184cf70a3b6aa2285bfd11ee2090f4c4f673d6b7b26be11a72857eb57"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs000_val",
       "name": "fo_scenario_B_cs000_val",
       "description": "scenario_B cohortseed_000 val parquet",
@@ -235,7 +226,7 @@
       "sha256": "8bebedfdc97d1e520432f6cd841138e9c78738a20c2e0df7ba9341ad01cc5898"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs000_test",
       "name": "fo_scenario_B_cs000_test",
       "description": "scenario_B cohortseed_000 test parquet",
@@ -244,7 +235,7 @@
       "sha256": "e333236084f76e298e1f65e2905b1a5cda0d932efd072eeb25206e74a82f402e"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs001_train",
       "name": "fo_scenario_B_cs001_train",
       "description": "scenario_B cohortseed_001 train parquet",
@@ -253,7 +244,7 @@
       "sha256": "02ffe2cd4ffa25f5923cef176a0db31c8f6360713aeb52fdd54b89e2211c3a28"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs001_val",
       "name": "fo_scenario_B_cs001_val",
       "description": "scenario_B cohortseed_001 val parquet",
@@ -262,7 +253,7 @@
       "sha256": "18e4fef976d743d9a64ce13584aa383d3e345dbbec6b4ce8189ffd6762ca0340"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs001_test",
       "name": "fo_scenario_B_cs001_test",
       "description": "scenario_B cohortseed_001 test parquet",
@@ -271,7 +262,7 @@
       "sha256": "f1fa6a8d469846b5a7a545a62052bc5036519690ea8115c7582ecb81728c643c"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs002_train",
       "name": "fo_scenario_B_cs002_train",
       "description": "scenario_B cohortseed_002 train parquet",
@@ -280,7 +271,7 @@
       "sha256": "d07e61c4cbb4bec7c8858dbd6525f726bd1ae78c15dc2438d74c4c98cb2c1766"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs002_val",
       "name": "fo_scenario_B_cs002_val",
       "description": "scenario_B cohortseed_002 val parquet",
@@ -289,7 +280,7 @@
       "sha256": "4db37ad9eb2bbf31b0123c33a7e8e2c327bfbfb91b5174ed992b7a6135c0030c"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs002_test",
       "name": "fo_scenario_B_cs002_test",
       "description": "scenario_B cohortseed_002 test parquet",
@@ -298,7 +289,7 @@
       "sha256": "9624da3425d1e1625e6919da80ddc17052beb3cd73144aca1b1a7d5e4768adb2"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs003_train",
       "name": "fo_scenario_B_cs003_train",
       "description": "scenario_B cohortseed_003 train parquet",
@@ -307,7 +298,7 @@
       "sha256": "03c887093f57837bf62a3681f43bd49ecfce8ca6150296fb70ba1f9950994706"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs003_val",
       "name": "fo_scenario_B_cs003_val",
       "description": "scenario_B cohortseed_003 val parquet",
@@ -316,7 +307,7 @@
       "sha256": "0fea6032cc76f938cb9057c997cd9bac611cf373b5aff22ab45af763e9ce8f47"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs003_test",
       "name": "fo_scenario_B_cs003_test",
       "description": "scenario_B cohortseed_003 test parquet",
@@ -325,7 +316,7 @@
       "sha256": "738aeed6ea81abdd064fa16ea84e187cccb2975f5110863859eccc025059bda3"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs004_train",
       "name": "fo_scenario_B_cs004_train",
       "description": "scenario_B cohortseed_004 train parquet",
@@ -334,7 +325,7 @@
       "sha256": "8bf91fb5f79e1798ce2badf932b35eafa95f3737f843ee7c2db914576ac3e067"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs004_val",
       "name": "fo_scenario_B_cs004_val",
       "description": "scenario_B cohortseed_004 val parquet",
@@ -343,7 +334,7 @@
       "sha256": "c3c1700d2743263f29cc0bf3f4e97c3f3f15cc54a2a9128a51a8b116e711c0ce"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_B_cs004_test",
       "name": "fo_scenario_B_cs004_test",
       "description": "scenario_B cohortseed_004 test parquet",
@@ -352,7 +343,7 @@
       "sha256": "25e13d0ad3e3a0aa9689fd44155326823a8cd6796f88b319ecd9d9449fc67e82"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs000_train",
       "name": "fo_scenario_C_cs000_train",
       "description": "scenario_C cohortseed_000 train parquet",
@@ -361,7 +352,7 @@
       "sha256": "9c4a7360b7e47826ebe17cee5221e08ba6e856f68bc2ac3733171c627c6495d9"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs000_val",
       "name": "fo_scenario_C_cs000_val",
       "description": "scenario_C cohortseed_000 val parquet",
@@ -370,7 +361,7 @@
       "sha256": "863b0f46ba27f2a6ce92a1a9393d836379170ead5a478f490a3c5598c478355a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs000_test",
       "name": "fo_scenario_C_cs000_test",
       "description": "scenario_C cohortseed_000 test parquet",
@@ -379,7 +370,7 @@
       "sha256": "dcfe223552f7819a3acea90f91d16feeb7946d315931f497214dee71656af09c"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs001_train",
       "name": "fo_scenario_C_cs001_train",
       "description": "scenario_C cohortseed_001 train parquet",
@@ -388,7 +379,7 @@
       "sha256": "34d8aea146402915d75c0ab1447dbd2b0562b1b383813ff36471f5672e4831b7"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs001_val",
       "name": "fo_scenario_C_cs001_val",
       "description": "scenario_C cohortseed_001 val parquet",
@@ -397,7 +388,7 @@
       "sha256": "959a2e115cd2c73c31e6447b1beacd1fb8f4152e8488f3d00b4549564b96a745"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs001_test",
       "name": "fo_scenario_C_cs001_test",
       "description": "scenario_C cohortseed_001 test parquet",
@@ -406,7 +397,7 @@
       "sha256": "1a7fe34c116f341c2fd8f27924bf57b545e80a05caafd02a5e97be106e2c9302"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs002_train",
       "name": "fo_scenario_C_cs002_train",
       "description": "scenario_C cohortseed_002 train parquet",
@@ -415,7 +406,7 @@
       "sha256": "c60bba94d84577f16c11d3296985e9c3a91e431383172a631cdc5bcbf587fdd4"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs002_val",
       "name": "fo_scenario_C_cs002_val",
       "description": "scenario_C cohortseed_002 val parquet",
@@ -424,7 +415,7 @@
       "sha256": "5cfdc0cf1295d5dfb1c91ca0db2dd96448f58101eab020fe48542104a6fe2162"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs002_test",
       "name": "fo_scenario_C_cs002_test",
       "description": "scenario_C cohortseed_002 test parquet",
@@ -433,7 +424,7 @@
       "sha256": "a18f4ddcf3fcbd3ab22159540178c6a184675fa61fc18eec1abbdb590117047c"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs003_train",
       "name": "fo_scenario_C_cs003_train",
       "description": "scenario_C cohortseed_003 train parquet",
@@ -442,7 +433,7 @@
       "sha256": "3ab2d40f91aeaefdc61e59f0f406859fe712a1de8ce04fcdd042f52425d19192"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs003_val",
       "name": "fo_scenario_C_cs003_val",
       "description": "scenario_C cohortseed_003 val parquet",
@@ -451,7 +442,7 @@
       "sha256": "ba00c911964237abba5c77cecc2ce0c26e88df579c03e90f309ecaae06c42987"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs003_test",
       "name": "fo_scenario_C_cs003_test",
       "description": "scenario_C cohortseed_003 test parquet",
@@ -460,7 +451,7 @@
       "sha256": "7b43201810f47ef322007adda6f7fe6cfe5d520ef015e3b1fcad0c389861b9a1"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs004_train",
       "name": "fo_scenario_C_cs004_train",
       "description": "scenario_C cohortseed_004 train parquet",
@@ -469,7 +460,7 @@
       "sha256": "a2c46cb26ff6dd282dae11103e158490caf2cd841f1cdaf63ff7ae9610880d99"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs004_val",
       "name": "fo_scenario_C_cs004_val",
       "description": "scenario_C cohortseed_004 val parquet",
@@ -478,7 +469,7 @@
       "sha256": "7ced8461318ddecf2fdeb77fc2f7a7b995ec79bf3fd05192faa26608792b237a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_C_cs004_test",
       "name": "fo_scenario_C_cs004_test",
       "description": "scenario_C cohortseed_004 test parquet",
@@ -487,7 +478,7 @@
       "sha256": "0a6d98955bb35904af4156f9faca0e8d0ae26de382662b55c50d30bbd7ec1d68"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs000_train",
       "name": "fo_scenario_MAR_cs000_train",
       "description": "scenario_MAR cohortseed_000 train parquet",
@@ -496,7 +487,7 @@
       "sha256": "48ae8c3db33818cd128de582f948c682e347ed0dc46f5f7d6a317864ae9a1b8a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs000_val",
       "name": "fo_scenario_MAR_cs000_val",
       "description": "scenario_MAR cohortseed_000 val parquet",
@@ -505,7 +496,7 @@
       "sha256": "60bf478871190602efadfac4b4b6979eda509a1195a605bd914b8422bcfa7b30"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs000_test",
       "name": "fo_scenario_MAR_cs000_test",
       "description": "scenario_MAR cohortseed_000 test parquet",
@@ -514,7 +505,7 @@
       "sha256": "5489216e8c2c3e085d016a769c30bd463284a3b4b80319a940b85328a6186746"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs001_train",
       "name": "fo_scenario_MAR_cs001_train",
       "description": "scenario_MAR cohortseed_001 train parquet",
@@ -523,7 +514,7 @@
       "sha256": "ab8a7ea7b8136c8a8df94f5ef55dbc9989f5e0296c077fedeb4836ef7276ee0e"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs001_val",
       "name": "fo_scenario_MAR_cs001_val",
       "description": "scenario_MAR cohortseed_001 val parquet",
@@ -532,7 +523,7 @@
       "sha256": "bacb304400d4bc879b12415b25229fe8fea5935e8d18bac388e51eff9ae02488"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs001_test",
       "name": "fo_scenario_MAR_cs001_test",
       "description": "scenario_MAR cohortseed_001 test parquet",
@@ -541,7 +532,7 @@
       "sha256": "6f84ce43019a68f7bc927d6062d967c350a28ed1071a74ea0743965dfa33a46f"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs002_train",
       "name": "fo_scenario_MAR_cs002_train",
       "description": "scenario_MAR cohortseed_002 train parquet",
@@ -550,7 +541,7 @@
       "sha256": "a77a7953f0bdc115d536e7e6be077c7e09ae3e6f0170b2447db3e45f52b0b6e4"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs002_val",
       "name": "fo_scenario_MAR_cs002_val",
       "description": "scenario_MAR cohortseed_002 val parquet",
@@ -559,7 +550,7 @@
       "sha256": "f5c854e199409bb3c3e44f9dfae2ec4a0e1a3716cbb8456e0b154e30129a9dbf"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs002_test",
       "name": "fo_scenario_MAR_cs002_test",
       "description": "scenario_MAR cohortseed_002 test parquet",
@@ -568,7 +559,7 @@
       "sha256": "3d4b7ed277470b13f60c22c7dd482a8d19c0c869b9e560ed0f295b7be726bfcb"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs003_train",
       "name": "fo_scenario_MAR_cs003_train",
       "description": "scenario_MAR cohortseed_003 train parquet",
@@ -577,7 +568,7 @@
       "sha256": "7f877dbbedf6ed6597bc15d3274624ae6a4f1f1638d6f1af0af1e987116d4038"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs003_val",
       "name": "fo_scenario_MAR_cs003_val",
       "description": "scenario_MAR cohortseed_003 val parquet",
@@ -586,7 +577,7 @@
       "sha256": "e4c0d7a018c3c0616427db196daf93cbec99f2662e7cc102b3a6bdb03eaa7dad"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs003_test",
       "name": "fo_scenario_MAR_cs003_test",
       "description": "scenario_MAR cohortseed_003 test parquet",
@@ -595,7 +586,7 @@
       "sha256": "58c792db690a51a157b68da532172edc78168e70045487a9b7da9faaf2cfd16b"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs004_train",
       "name": "fo_scenario_MAR_cs004_train",
       "description": "scenario_MAR cohortseed_004 train parquet",
@@ -604,7 +595,7 @@
       "sha256": "662b367beca6e82253763ee8c2e7f930bd65af0c2494dd5407859ee39c632338"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs004_val",
       "name": "fo_scenario_MAR_cs004_val",
       "description": "scenario_MAR cohortseed_004 val parquet",
@@ -613,7 +604,7 @@
       "sha256": "5cb96019b06b6455f15cda673831f7b60773c0a2c534951f0faa443cf36eac42"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MAR_cs004_test",
       "name": "fo_scenario_MAR_cs004_test",
       "description": "scenario_MAR cohortseed_004 test parquet",
@@ -622,7 +613,7 @@
       "sha256": "2080eba6629dddda5eae7381063dde3fc5393ecde60026fe32efcd2cc78a0704"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs000_train",
       "name": "fo_scenario_MISMATCH_cs000_train",
       "description": "scenario_MISMATCH cohortseed_000 train parquet",
@@ -631,7 +622,7 @@
       "sha256": "65941bf56ed5f2ab061ca6b0d46ff7309a9a79eba29b81481e25c7239100eda2"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs000_val",
       "name": "fo_scenario_MISMATCH_cs000_val",
       "description": "scenario_MISMATCH cohortseed_000 val parquet",
@@ -640,7 +631,7 @@
       "sha256": "ad43af4485538b7000b5842ae8b453f83e6a4e0d1474b08d50645940ab092a9d"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs000_test",
       "name": "fo_scenario_MISMATCH_cs000_test",
       "description": "scenario_MISMATCH cohortseed_000 test parquet",
@@ -649,7 +640,7 @@
       "sha256": "6fe4cc3013776ceb93e77611be99f5281b039c3c9173afe4cd3d258bb0900737"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs001_train",
       "name": "fo_scenario_MISMATCH_cs001_train",
       "description": "scenario_MISMATCH cohortseed_001 train parquet",
@@ -658,7 +649,7 @@
       "sha256": "cf7b3c5fb1c217a1f2c2713ff4f5197a5ce125237dce0baa0976aff1b6f6a083"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs001_val",
       "name": "fo_scenario_MISMATCH_cs001_val",
       "description": "scenario_MISMATCH cohortseed_001 val parquet",
@@ -667,7 +658,7 @@
       "sha256": "1519ff12c4c96e9394ee423f108d9ff86c1881876ea2aad104872ebe997b7784"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs001_test",
       "name": "fo_scenario_MISMATCH_cs001_test",
       "description": "scenario_MISMATCH cohortseed_001 test parquet",
@@ -676,7 +667,7 @@
       "sha256": "affc1b3a694447730b35f310f6130e80bbec6a0cd425fa314580fb35386c6810"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs002_train",
       "name": "fo_scenario_MISMATCH_cs002_train",
       "description": "scenario_MISMATCH cohortseed_002 train parquet",
@@ -685,7 +676,7 @@
       "sha256": "a3e14fb2169f729d6095b045322a42c8340b26ef769e736cdcdc08caa93634c5"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs002_val",
       "name": "fo_scenario_MISMATCH_cs002_val",
       "description": "scenario_MISMATCH cohortseed_002 val parquet",
@@ -694,7 +685,7 @@
       "sha256": "2afe6d230d77ea86db97cfc08cc9517fd24675b40dfbb1ea74c6544ff94d8c34"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs002_test",
       "name": "fo_scenario_MISMATCH_cs002_test",
       "description": "scenario_MISMATCH cohortseed_002 test parquet",
@@ -703,7 +694,7 @@
       "sha256": "1d098f8a211db2b5b6dec5dcb46873a8064bf3ca78aa4e38b764001d2d0851ac"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs003_train",
       "name": "fo_scenario_MISMATCH_cs003_train",
       "description": "scenario_MISMATCH cohortseed_003 train parquet",
@@ -712,7 +703,7 @@
       "sha256": "421bf758fa863b6f261406e3c4086b0e30e1294d499f9dd82ce71e3154004bef"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs003_val",
       "name": "fo_scenario_MISMATCH_cs003_val",
       "description": "scenario_MISMATCH cohortseed_003 val parquet",
@@ -721,7 +712,7 @@
       "sha256": "3b1faeada32035d34dfd59e3ab3689bc980e9f1017f2b9aff6ad2aaa83bf74c8"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs003_test",
       "name": "fo_scenario_MISMATCH_cs003_test",
       "description": "scenario_MISMATCH cohortseed_003 test parquet",
@@ -730,7 +721,7 @@
       "sha256": "f0abe92631783f42bdcf9d5cdd6d6fb89965b3d2da79aab4d11f58d303fb6f87"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs004_train",
       "name": "fo_scenario_MISMATCH_cs004_train",
       "description": "scenario_MISMATCH cohortseed_004 train parquet",
@@ -739,7 +730,7 @@
       "sha256": "6aa44dede9cc76c8e644ef6a0bf08b017b86728bff673d19600f323289babcd2"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs004_val",
       "name": "fo_scenario_MISMATCH_cs004_val",
       "description": "scenario_MISMATCH cohortseed_004 val parquet",
@@ -748,7 +739,7 @@
       "sha256": "86b2e3f62333a2d30e71ac6cc6aaa2c3e7753a233a960019108770b7cec7ac96"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_cs004_test",
       "name": "fo_scenario_MISMATCH_cs004_test",
       "description": "scenario_MISMATCH cohortseed_004 test parquet",
@@ -757,7 +748,7 @@
       "sha256": "842db4a166f79806dcef8ecd3678a63f9bf2ee6a267bc20a38a8bd8189996a6d"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs000_train",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs000_train",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_000 train parquet",
@@ -766,7 +757,7 @@
       "sha256": "cf18adbb71d0fe03ec34dede5b2f3abbfb6c24c95d90dcea6e8d7f7526caef12"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs000_val",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs000_val",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_000 val parquet",
@@ -775,7 +766,7 @@
       "sha256": "e9a7cf00a590fade92a90af4310ba769637b6a2ff8e0188f1d67b3c5ff221341"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs000_test",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs000_test",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_000 test parquet",
@@ -784,7 +775,7 @@
       "sha256": "0a723e16c2c49c321cc02b28f4c1a01886cc3fc2d2381221a78ac7d3965aa94d"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs001_train",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs001_train",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_001 train parquet",
@@ -793,7 +784,7 @@
       "sha256": "8620de26e68ac1e837418196ebaeb36725cec9f56d4f96dc53139deb588dd887"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs001_val",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs001_val",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_001 val parquet",
@@ -802,7 +793,7 @@
       "sha256": "8aec1c3a6daa1e9cf268aae56ce7608327478b62add5a2a0b8afadddf2a9a20f"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs001_test",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs001_test",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_001 test parquet",
@@ -811,7 +802,7 @@
       "sha256": "cf5c9cb76304d7c75928888f7fdefc491e7d5d0ec9abe2cb5a199449d20b464e"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs002_train",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs002_train",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_002 train parquet",
@@ -820,7 +811,7 @@
       "sha256": "350b3aaea39a2bf9df6cfa9061a05cdcf515dcd0df00a4061bdd0e9a3c1e780d"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs002_val",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs002_val",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_002 val parquet",
@@ -829,7 +820,7 @@
       "sha256": "a8cc640ba18d98ceb6845a181c5e94217b4ec7bfb6072ee5c6cbf7559a559156"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs002_test",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs002_test",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_002 test parquet",
@@ -838,7 +829,7 @@
       "sha256": "d70bf6e1e22e4bf56c0b2e6fcac2e4bb2d75054475115723bec8d95e85696cee"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs003_train",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs003_train",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_003 train parquet",
@@ -847,7 +838,7 @@
       "sha256": "538960f85b152ed92c671ad30f8643d56fb59f72f432e24f5490639eaed2c020"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs003_val",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs003_val",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_003 val parquet",
@@ -856,7 +847,7 @@
       "sha256": "ccca9845b05f884d9c0c26b68a08a629594088ba5a5c48c87661f0a3c720296a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs003_test",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs003_test",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_003 test parquet",
@@ -865,7 +856,7 @@
       "sha256": "0f77bbb269678abb9c6c250d0d77024098264f1b619ab6ca4e6d9a07df0f6d2f"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs004_train",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs004_train",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_004 train parquet",
@@ -874,7 +865,7 @@
       "sha256": "1af11576ebd994c0699c0292aa594775fe084da86f0a9538353f61d7edfd7c82"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs004_val",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs004_val",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_004 val parquet",
@@ -883,7 +874,7 @@
       "sha256": "494444688f459c64206c1fbdfa87cf06f9467f95a374f7a106e861ef6dffb1d4"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MISMATCH_TRANSFER_cs004_test",
       "name": "fo_scenario_MISMATCH_TRANSFER_cs004_test",
       "description": "scenario_MISMATCH_TRANSFER cohortseed_004 test parquet",
@@ -892,7 +883,7 @@
       "sha256": "0dd30d1a0b76e015b67c708fb691f834bf96557da194e3f733ecfe91029d7a71"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs000_train",
       "name": "fo_scenario_MNAR_CORRELATED_cs000_train",
       "description": "scenario_MNAR_CORRELATED cohortseed_000 train parquet",
@@ -901,7 +892,7 @@
       "sha256": "0bcbf758cc49c57262efb98dbf86bf3b8e3bd4b03e8bd95d578c8e54ffe15d2d"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs000_val",
       "name": "fo_scenario_MNAR_CORRELATED_cs000_val",
       "description": "scenario_MNAR_CORRELATED cohortseed_000 val parquet",
@@ -910,7 +901,7 @@
       "sha256": "a6f4ccb4d2677cf12a456854c249b84a003608376ae73ba2d1e84051690c1411"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs000_test",
       "name": "fo_scenario_MNAR_CORRELATED_cs000_test",
       "description": "scenario_MNAR_CORRELATED cohortseed_000 test parquet",
@@ -919,7 +910,7 @@
       "sha256": "bfe3cf0518bd4b5a3f902896e4802ec33c92ee585989c0057acff4e21e00e11a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs001_train",
       "name": "fo_scenario_MNAR_CORRELATED_cs001_train",
       "description": "scenario_MNAR_CORRELATED cohortseed_001 train parquet",
@@ -928,7 +919,7 @@
       "sha256": "5835fd807983b9d09134e1b4defa5b044e3205ccb03abafd2d153d2c40fe0c05"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs001_val",
       "name": "fo_scenario_MNAR_CORRELATED_cs001_val",
       "description": "scenario_MNAR_CORRELATED cohortseed_001 val parquet",
@@ -937,7 +928,7 @@
       "sha256": "680c40c860f47c2ebb744c2d0422af684bbbb3024c3974085ded9818f4f1063c"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs001_test",
       "name": "fo_scenario_MNAR_CORRELATED_cs001_test",
       "description": "scenario_MNAR_CORRELATED cohortseed_001 test parquet",
@@ -946,7 +937,7 @@
       "sha256": "abc0939cb35ca6f1e72d458130bb7207166a13cca710fa49431c55864d6e1c61"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs002_train",
       "name": "fo_scenario_MNAR_CORRELATED_cs002_train",
       "description": "scenario_MNAR_CORRELATED cohortseed_002 train parquet",
@@ -955,7 +946,7 @@
       "sha256": "728f59ac89fb85e3814da5537d63acf6f31d73da98f9f346c7d221b5c517d2d1"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs002_val",
       "name": "fo_scenario_MNAR_CORRELATED_cs002_val",
       "description": "scenario_MNAR_CORRELATED cohortseed_002 val parquet",
@@ -964,7 +955,7 @@
       "sha256": "8295d326fb6c75e60ba7f2e0dff6e5a5626c986436c9b3846e28a9eecbe99317"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs002_test",
       "name": "fo_scenario_MNAR_CORRELATED_cs002_test",
       "description": "scenario_MNAR_CORRELATED cohortseed_002 test parquet",
@@ -973,7 +964,7 @@
       "sha256": "e5202d062176e8f086a1f566764acefae925b8fb4f6c41a1fbee7d0eaed62c10"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs003_train",
       "name": "fo_scenario_MNAR_CORRELATED_cs003_train",
       "description": "scenario_MNAR_CORRELATED cohortseed_003 train parquet",
@@ -982,7 +973,7 @@
       "sha256": "7b8bd0e2ae16046199e7d3be123e4700650958939a2cc1fa364640249364917a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs003_val",
       "name": "fo_scenario_MNAR_CORRELATED_cs003_val",
       "description": "scenario_MNAR_CORRELATED cohortseed_003 val parquet",
@@ -991,7 +982,7 @@
       "sha256": "eb3d59c79f4b01828aa47e5f00c585be0898d0254b429456e2690425198ae8d1"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs003_test",
       "name": "fo_scenario_MNAR_CORRELATED_cs003_test",
       "description": "scenario_MNAR_CORRELATED cohortseed_003 test parquet",
@@ -1000,7 +991,7 @@
       "sha256": "9f80748c989e2beac1d764351b60801a800ee4a01287075ace5e7add56390b0a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs004_train",
       "name": "fo_scenario_MNAR_CORRELATED_cs004_train",
       "description": "scenario_MNAR_CORRELATED cohortseed_004 train parquet",
@@ -1009,7 +1000,7 @@
       "sha256": "b42d0b2cf74df1b1d64abe2b6ea983cc204cdc105dade8fe0efd92ac8714da0e"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs004_val",
       "name": "fo_scenario_MNAR_CORRELATED_cs004_val",
       "description": "scenario_MNAR_CORRELATED cohortseed_004 val parquet",
@@ -1018,7 +1009,7 @@
       "sha256": "5140c65c644b5acdec0251bd460978b3f7592f23780efeec65c14492eb1cc814"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_MNAR_CORRELATED_cs004_test",
       "name": "fo_scenario_MNAR_CORRELATED_cs004_test",
       "description": "scenario_MNAR_CORRELATED cohortseed_004 test parquet",
@@ -1027,7 +1018,7 @@
       "sha256": "bd2317b4b9aa2485b4992320f40f3a676273373e9050959dc138c4cd93b20e2f"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs000_train",
       "name": "fo_scenario_VISITSHIFT_cs000_train",
       "description": "scenario_VISITSHIFT cohortseed_000 train parquet",
@@ -1036,7 +1027,7 @@
       "sha256": "9e8fdcf2489756d8b3fcc7d2d1f5832a25599984e95ef2607559ea878a13596a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs000_val",
       "name": "fo_scenario_VISITSHIFT_cs000_val",
       "description": "scenario_VISITSHIFT cohortseed_000 val parquet",
@@ -1045,7 +1036,7 @@
       "sha256": "72403e0ac6c284496d2226a71f542eb9a0488266eadd35a3242b9b201ce1629c"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs000_test",
       "name": "fo_scenario_VISITSHIFT_cs000_test",
       "description": "scenario_VISITSHIFT cohortseed_000 test parquet",
@@ -1054,7 +1045,7 @@
       "sha256": "484272cd6dcd663e55d80d1a7cd465833a35f7da2cf49af18bf6c40a0517151b"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs001_train",
       "name": "fo_scenario_VISITSHIFT_cs001_train",
       "description": "scenario_VISITSHIFT cohortseed_001 train parquet",
@@ -1063,7 +1054,7 @@
       "sha256": "b11d8c940e1800181a0980ac969c932aa24249dc7995dcb3cf24c60755472cee"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs001_val",
       "name": "fo_scenario_VISITSHIFT_cs001_val",
       "description": "scenario_VISITSHIFT cohortseed_001 val parquet",
@@ -1072,7 +1063,7 @@
       "sha256": "6d6d51b982c50cedc6cc6f6a6ff71fc74d72f5d8ecf0d586bf8f213cb10b0403"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs001_test",
       "name": "fo_scenario_VISITSHIFT_cs001_test",
       "description": "scenario_VISITSHIFT cohortseed_001 test parquet",
@@ -1081,7 +1072,7 @@
       "sha256": "5d0a448dc6772581346c22fdf28ef298a64f4e8d2b2066695e7e11f8272f1be6"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs002_train",
       "name": "fo_scenario_VISITSHIFT_cs002_train",
       "description": "scenario_VISITSHIFT cohortseed_002 train parquet",
@@ -1090,7 +1081,7 @@
       "sha256": "7ee0ce6d3099bc98a68533bb80343f0930c9471ce559188bfc9925b22b003fbf"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs002_val",
       "name": "fo_scenario_VISITSHIFT_cs002_val",
       "description": "scenario_VISITSHIFT cohortseed_002 val parquet",
@@ -1099,7 +1090,7 @@
       "sha256": "afdeff32d3d899c6a469c6af3f82d642f3096c2de6275359823aa3c4ae3028fe"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs002_test",
       "name": "fo_scenario_VISITSHIFT_cs002_test",
       "description": "scenario_VISITSHIFT cohortseed_002 test parquet",
@@ -1108,7 +1099,7 @@
       "sha256": "f8728687f84905e6866dda8b79dfda702d226659459e957e34f98fe085a2f7f8"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs003_train",
       "name": "fo_scenario_VISITSHIFT_cs003_train",
       "description": "scenario_VISITSHIFT cohortseed_003 train parquet",
@@ -1117,7 +1108,7 @@
       "sha256": "c741b0b5bfbfd8ab800a9229705fb4a355f3199d3896d74f181ae402f4f9ca4b"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs003_val",
       "name": "fo_scenario_VISITSHIFT_cs003_val",
       "description": "scenario_VISITSHIFT cohortseed_003 val parquet",
@@ -1126,7 +1117,7 @@
       "sha256": "edb29a1b021c300fcb3f91fce4fbb8234f6fc056a4c1730b8f0b686549fc53fc"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs003_test",
       "name": "fo_scenario_VISITSHIFT_cs003_test",
       "description": "scenario_VISITSHIFT cohortseed_003 test parquet",
@@ -1135,7 +1126,7 @@
       "sha256": "95796a79fae009a31a209e009ae0d81c5d67bbb6dccb867cd9d1d66029490ee0"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs004_train",
       "name": "fo_scenario_VISITSHIFT_cs004_train",
       "description": "scenario_VISITSHIFT cohortseed_004 train parquet",
@@ -1144,7 +1135,7 @@
       "sha256": "a19b94918b672169f19d34149df469affe7f617c61930cb1fcfc634b4c297a54"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs004_val",
       "name": "fo_scenario_VISITSHIFT_cs004_val",
       "description": "scenario_VISITSHIFT cohortseed_004 val parquet",
@@ -1153,7 +1144,7 @@
       "sha256": "6b45cbab1e54a75670d0e82f2274ab15b25d7a1da22d656d3194beee07515170"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_cs004_test",
       "name": "fo_scenario_VISITSHIFT_cs004_test",
       "description": "scenario_VISITSHIFT cohortseed_004 test parquet",
@@ -1162,7 +1153,7 @@
       "sha256": "34e3f318935ddac6275830bf3458b310ef731517144be7f5f92d02b30a3e1333"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs000_train",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs000_train",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_000 train parquet",
@@ -1171,7 +1162,7 @@
       "sha256": "cf18adbb71d0fe03ec34dede5b2f3abbfb6c24c95d90dcea6e8d7f7526caef12"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs000_val",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs000_val",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_000 val parquet",
@@ -1180,7 +1171,7 @@
       "sha256": "e9a7cf00a590fade92a90af4310ba769637b6a2ff8e0188f1d67b3c5ff221341"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs000_test",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs000_test",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_000 test parquet",
@@ -1189,7 +1180,7 @@
       "sha256": "a78ff2c1bed6aebd205b2c1238ecc00a77fb694713911a9c1b4d50aa547cd5cb"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs001_train",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs001_train",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_001 train parquet",
@@ -1198,7 +1189,7 @@
       "sha256": "8620de26e68ac1e837418196ebaeb36725cec9f56d4f96dc53139deb588dd887"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs001_val",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs001_val",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_001 val parquet",
@@ -1207,7 +1198,7 @@
       "sha256": "8aec1c3a6daa1e9cf268aae56ce7608327478b62add5a2a0b8afadddf2a9a20f"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs001_test",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs001_test",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_001 test parquet",
@@ -1216,7 +1207,7 @@
       "sha256": "598515333b934182b6306ecfaa3061660e96efd98ab79168a11b5cea9e91749a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs002_train",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs002_train",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_002 train parquet",
@@ -1225,7 +1216,7 @@
       "sha256": "350b3aaea39a2bf9df6cfa9061a05cdcf515dcd0df00a4061bdd0e9a3c1e780d"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs002_val",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs002_val",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_002 val parquet",
@@ -1234,7 +1225,7 @@
       "sha256": "a8cc640ba18d98ceb6845a181c5e94217b4ec7bfb6072ee5c6cbf7559a559156"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs002_test",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs002_test",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_002 test parquet",
@@ -1243,7 +1234,7 @@
       "sha256": "f8ddd3cc78a186f13144479f8c6e198c73f0e83bee0e782e71115515b8cbb70e"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs003_train",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs003_train",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_003 train parquet",
@@ -1252,7 +1243,7 @@
       "sha256": "538960f85b152ed92c671ad30f8643d56fb59f72f432e24f5490639eaed2c020"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs003_val",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs003_val",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_003 val parquet",
@@ -1261,7 +1252,7 @@
       "sha256": "ccca9845b05f884d9c0c26b68a08a629594088ba5a5c48c87661f0a3c720296a"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs003_test",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs003_test",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_003 test parquet",
@@ -1270,7 +1261,7 @@
       "sha256": "20bec48eca18579c5bcdb478b15bcfd1a837dd203d4e26df8870154b1ed06d59"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs004_train",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs004_train",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_004 train parquet",
@@ -1279,7 +1270,7 @@
       "sha256": "1af11576ebd994c0699c0292aa594775fe084da86f0a9538353f61d7edfd7c82"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs004_val",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs004_val",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_004 val parquet",
@@ -1288,7 +1279,7 @@
       "sha256": "494444688f459c64206c1fbdfa87cf06f9467f95a374f7a106e861ef6dffb1d4"
     },
     {
-      "@type": "sc:FileObject",
+      "@type": "http://mlcommons.org/croissant/FileObject",
       "@id": "fo_scenario_VISITSHIFT_TRANSFER_cs004_test",
       "name": "fo_scenario_VISITSHIFT_TRANSFER_cs004_test",
       "description": "scenario_VISITSHIFT_TRANSFER cohortseed_004 test parquet",
@@ -1576,6 +1567,32 @@
     }
   ],
   "comment": "MIMIC-IV is grounding-only and reconstruction-only for this benchmark project. Raw or row-level derived MIMIC data are not redistributed in this dataset distribution.",
-  "isAccessibleForFree": true,
-  "conditionsOfAccess": "Synthetic data are public; MIMIC/eICU grounding rows are not redistributed and require credentialed access from their original providers."
+  "rai:dataLimitations": "SynLV is a stylized synthetic benchmark for controlled evaluation of decision-time incompleteness in longitudinal survival prediction. It is designed for mechanism-level stress testing, not for estimating performance in any specific hospital, disease cohort, or deployment environment. The generator uses simplified latent dynamics, observation processes, missingness mechanisms, and survival hazards; it does not model treatment effects, clinical coding practices, medication policies, demographic heterogeneity, site-specific measurement workflows, or all forms of temporal and population shift. Out-of-scope uses include clinical deployment, patient-level inference, claims of clinical validity, or replacing validation on real cohorts, prospective monitoring, fairness analysis, calibration assessment, and domain-specific clinical review.",
+  "rai:dataBiases": "Because SynLV is synthetic, its biases are design biases induced by the generator, scenario definitions, stress-pool choice, visit-count distribution, missingness mechanisms, train/validation/test split construction, and model-facing preprocessing conventions. The primary generator uses smooth latent decay, linear-Gaussian emissions, and a proportional-hazards event process, which can favor some clean-task inductive biases and may under-represent the complexity of real EHR workflows. The benchmark intentionally does not represent demographic groups, hospital systems, geographic regions, or disease subpopulations; results should therefore be interpreted as controlled robustness diagnostics rather than estimates of group-specific clinical performance.",
+  "rai:personalSensitiveInformation": "The hosted SynLV benchmark contains no real patient records, no personally identifying information, and no row-level derived records from MIMIC-IV, eICU, or any other clinical database. The dataset is fully synthetic. Real ICU datasets are used only in separate grounding analyses described in the paper and companion documentation; raw or row-level derived MIMIC-IV and eICU data are not redistributed and require credentialed source access.",
+  "rai:dataUseCases": "Intended uses include evaluating and diagnosing robustness of longitudinal survival models under controlled incomplete final encounters; comparing model behavior under identical matched final-visit stress masks; studying how degradation changes with corruption prevalence, severity, missingness mechanism, timing shift, measurement mismatch, and transfer; and testing robustness interventions under fixed synthetic scenarios. Validity is established for controlled, within-benchmark mechanism-level stress testing under the documented generator and stress protocol. Validity is not established for clinical deployment, patient-level risk estimation, estimating real-world ICU performance, fairness auditing of demographic groups, or substituting for real-cohort validation.",
+  "rai:dataSocialImpact": "Potential positive impacts include improving evaluation practice for survival models used in settings where current information can be incomplete, delayed, selectively measured, or shifted, and encouraging transparent stress testing before deployment. Potential negative impacts include overinterpreting synthetic benchmark robustness as clinical readiness, treating stylized synthetic results as evidence for a specific patient population, or using the benchmark to avoid real-world validation and monitoring. Mitigations include explicit scope statements, fixed and documented stress definitions, public code and metadata, descriptive rather than validating real-data grounding, and paper-level limitations stating that SynLV should be used alongside real cohort validation, prospective monitoring, fairness analysis, calibration assessment, and clinical review.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    {
+      "@type": "sc:CreativeWork",
+      "name": "SynLV v1.0 synthetic generator and fixed benchmark seeds",
+      "url": "https://github.com/Mele0/SynLV",
+      "description": "SynLV is generated from the released synthetic generator, scenario definitions, and deterministic cohort/stress seeds. It is not derived from raw patient records. Real ICU datasets are used only for separate grounding analyses and are not redistributed."
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "name": "SynLV v1.0 benchmark generation and release pipeline",
+      "description": "The dataset was generated by the SynLV v1.0 benchmark-generation pipeline and packaged with the companion release tooling. The hosted release contains nine primary scenarios (Reference, MNAR Mild, MNAR Strong, MNAR Corr, MAR, VisitShift, VisitShift-Transfer, Mismatch, and Mismatch-Transfer), five cohort seeds per scenario, fixed train/validation/test splits, per-cohort metadata, and deterministic stress-test definitions. For each cohort, the generator samples latent trajectories, irregular visits, mixed continuous/categorical covariates, right-censored survival outcomes, and scenario-specific observation processes. The final-visit stress protocol then applies fixed matched masks over corruption prevalence and severity grids while preserving earlier visits and event outcomes.",
+      "url": "https://github.com/Mele0/SynLV",
+      "startedAtTime": "2026-03-23",
+      "endedAtTime": "2026-03-23"
+    }
+  ],
+  "rai:dataCollection": "SynLV is produced entirely by a synthetic data generator. There was no human-subject data collection for the hosted benchmark. Each primary scenario contains five independently generated cohort seeds, 8000 patients per cohort seed, frozen train/validation/test splits, irregular visit histories, mixed covariates, right-censored outcomes, and scenario-specific observation processes. MIMIC-IV and eICU are used only as reconstruction-only grounding layers in the companion analyses and are not part of the hosted synthetic benchmark payload.",
+  "rai:dataReleaseMaintenance": "The v1.0 hosted release is intended to remain stable for comparison across studies. Backward-incompatible changes to scenario definitions, splits, stress pools, or primary stress-test summaries should define a new benchmark version rather than overwrite v1.0.",
+  "rai:dataAnnotationProtocol": "No human annotation was used. Survival times, censoring indicators, visit histories, covariates, scenario labels, split labels, and stress metadata are generated programmatically by the documented synthetic generator and release pipeline.",
+  "citation": "Melendez, A., Vuckovic, D., and Chadeau, M. SynLV: A Benchmark for Decision-Time Incompleteness in Longitudinal Survival Prediction. NeurIPS Evaluations & Datasets submission, 2026."
 }
